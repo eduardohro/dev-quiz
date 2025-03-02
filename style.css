@@ -445,3 +445,220 @@ body {
     background: #c40094;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .home-content .start-btn {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .popup-info {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup-info h2 {
+        font-size: 36px;
+    }
+
+    .quiz-section .quiz-box,
+    .quiz-section .result-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .quiz-box h1 {
+        font-size: 32px;
+    }
+
+    .quiz-header span {
+        font-size: 16px;
+    }
+
+    .quiz-box .question-text {
+        font-size: 20px;
+    }
+
+    .option-list .option {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .quiz-footer .next-btn {
+        width: 90px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .result-box h2 {
+        font-size: 32px;
+    }
+
+    .percentage-container .circular-progress {
+        width: 200px;
+        height: 200px;
+    }
+
+    .percentage-container .circular-progress::before {
+        width: 170px;
+        height: 170px;
+    }
+
+    .circular-progress .progress-value {
+        font-size: 36px;
+    }
+
+    .percentage-container .score-text {
+        font-size: 22px;
+    }
+
+    .buttons button {
+        width: 140px;
+        height: 50px;
+        font-size: 14px;
+        margin: 10px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background: #09001d;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        visibility: hidden;
+    }
+
+    .navbar a {
+        color: white;
+        padding: 14px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navbar.active {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    .home-content .start-btn {
+        width: 140px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .popup-info {
+        width: 95%;
+    }
+
+    .quiz-section .quiz-box,
+    .quiz-section .result-box {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .quiz-box h1 {
+        font-size: 20px;
+    }
+
+    .quiz-box .question-text {
+        font-size: 18px;
+    }
+
+    .option-list .option {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .quiz-footer .next-btn {
+        width: 80px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .result-box h2 {
+        font-size: 28px;
+    }
+
+    .percentage-container .circular-progress {
+        width: 150px;
+        height: 150px;
+    }
+
+    .percentage-container .circular-progress::before {
+        width: 130px;
+        height: 130px;
+    }
+
+    .circular-progress .progress-value {
+        font-size: 28px;
+    }
+
+    .percentage-container .score-text {
+        font-size: 18px;
+    }
+
+    .buttons button {
+        width: 120px;
+        height: 45px;
+        font-size: 12px;
+    }
+}

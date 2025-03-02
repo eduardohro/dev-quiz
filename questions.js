@@ -45,7 +45,7 @@ let questions = [
     },
     {
         numb: 5,
-        question: "O que significa SQL?",
+        question: "O que significa XML?",
         answer: "B. Extensible Markup Language",
         options: [
             "A. Excellent Multiple Language",
