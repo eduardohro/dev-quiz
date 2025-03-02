@@ -6,6 +6,7 @@ const continueBtn = document.querySelector('.continue-btn');
 const quizSection = document.querySelector('.quiz-section');
 const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
+const tryAgainBtn = document.querySelector('.tryAgain-btn');
 
 startBtn.onclick = () => {
     popupInfo.classList.add('active');
@@ -25,6 +26,20 @@ continueBtn.onclick = () => {
 
     showQuestions(0);
     questionCounter(1);
+    headerScore();
+}
+
+tryAgainBtn.onclick = () => {
+    quizBox.classList.add('active');
+    nextBtn.classList.remove('active');
+    resultBox.classList.remove('active');
+
+    questionCount = 0;
+    questionNumb = 1;
+    userScore = 0;
+    showQuestions(questionCount);
+    questionCounter(questionNumb);
+
     headerScore();
 }
 
