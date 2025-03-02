@@ -57,9 +57,38 @@ function showQuestions(index) {
         <div class="option"><span>${questions[index].options[3]}</span></div>`;
 
     optionList.innerHTML = optionTag;
+
+    const option = document.querySelectorAll('.option')
+    for (let i = 0; i < option.length; i++) {
+        option[i].setAttribute('onclick', 'optionSelected(this)');
+    }
+}
+
+function optionSelected(answer) {
+    let userAnswer = answer.textContent;
+    let correctAnswer = questions[questionCount].answer;
+    let allOptions = optionList.children.length;
+
+    if (userAnswer == correctAnswer) {
+        answer.classList.add('correct');
+    } else {
+        answer.classList.add('incorrect');
+
+        // se a resposta estiver incorreta, selecione automaticamente a resposta correta
+        for (let i = 0; i < allOptions; i++) {
+            if (optionList.children[i].textContent == correctAnswer) {
+                optionList.children[i].setAttribute('class', 'option correct');
+            }
+        }
+    }
+
+    // se o usuário selecionou, desabilita todas as opções
+    for (let i = 0; i < allOptions; i++) {
+        optionList.children[i].classList.add('disabled');
+    }
 }
 
 function questionCounter(index) {
     const questionTotal = document.querySelector('.question-total');
-    questionTotal.textContent = `${index} of ${questions.length} Questions`;
+    questionTotal.textContent = `${index} de ${questions.length} Questões`;
 }
