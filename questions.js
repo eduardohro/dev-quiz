@@ -4,12 +4,10 @@ let questions = [
         question: "O que significa HTML?",
         answer: "C. Hyper Text Markup Language",
         options: [
-            
             "A. Hyper Type Multi Language",
             "B. Hyper Text Multiple Language",
             "C. Hyper Text Markup Language",
             "D. Home Text Multi Language"
-
         ]
     },
     {
